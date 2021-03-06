@@ -1,0 +1,16 @@
+{
+"companyName": "InfinityGames",
+"productName": "DeathLands",
+"productVersion": "1.0.2",
+"dataUrl": "InfinityOrb.github.io.data.unityweb",
+"wasmCodeUrl": "InfinityOrb.github.io.wasm.code.unityweb",
+"wasmFrameworkUrl": "InfinityOrb.github.io.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.19f1"
+}
