@@ -2333,8 +2333,6 @@ var UnityLoader = UnityLoader || {
           var tempHeight = window.innerHeight;
           unityContent.style.width = tempWidth+'px';
           unityContent.style.height = tempHeight+'px';
-
-
             n(e, i)
         }), i
     },
