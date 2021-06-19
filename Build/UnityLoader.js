@@ -2334,6 +2334,7 @@ var UnityLoader = UnityLoader || {
       var tempHeight = window.innerHeight;
       unityContent.style.width = tempWidth+'px';
       unityContent.style.height = tempHeight+'px';
+
     }), i
   },
   instantiateAsync: function(e, t, r) {
