@@ -2558,6 +2558,7 @@ var UnityLoader = UnityLoader || {
 var userId_gbl, activityID_gbl, userActivityId_gbl;
 
 function goBack(){
+  console.log("Inside gobAck js");
   const iPad2 = !!(navigator.userAgent.match(/(iPad)/)
           || (navigator.platform === "MacIntel" && typeof navigator.standalone !== "undefined"))
   if(GetMobileOperatingSystem()=="Android"){
