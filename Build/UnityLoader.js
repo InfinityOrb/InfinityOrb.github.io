@@ -2054,16 +2054,16 @@ var UnityLoader = UnityLoader || {
     }
   }(),
   compatibilityCheck: function(e, t, r) {
-    /*UnityLoader.SystemInfo.hasWebGL ? UnityLoader.SystemInfo.mobile ? e.popup("Please note that Unity WebGL is not currently supported on mobiles. Press OK if you wish to continue anyway.", [{
-      text: "OK",
-      callback: t
-    }]) : ["Edge", "Firefox", "Chrome", "Safari"].indexOf(UnityLoader.SystemInfo.browser) == -1 ? e.popup("Please note that your browser is not currently supported for this Unity WebGL content. Press OK if you wish to continue anyway.", [{
-      text: "OK",
-      callback: t
-    }]) : t() : e.popup("Your browser does not support WebGL", [{
-      text: "OK",
-      callback: r
-    }])*/
+    // UnityLoader.SystemInfo.hasWebGL ? UnityLoader.SystemInfo.mobile ? e.popup("Please note that Unity WebGL is not currently supported on mobiles. Press OK if you wish to continue anyway.", [{
+    //   text: "OK",
+    //   callback: t
+    // }]) : ["Edge", "Firefox", "Chrome", "Safari"].indexOf(UnityLoader.SystemInfo.browser) == -1 ? e.popup("Please note that your browser is not currently supported for this Unity WebGL content. Press OK if you wish to continue anyway.", [{
+    //   text: "OK",
+    //   callback: t
+    // }]) : t() : e.popup("Your browser does not support WebGL", [{
+    //   text: "OK",
+    //   callback: r
+    // }])
     t();
   },
   buildCompatibilityCheck: function(e, t, r) {
@@ -2334,6 +2334,8 @@ var UnityLoader = UnityLoader || {
       var tempHeight = window.innerHeight;
       unityContent.style.width = tempWidth+'px';
       unityContent.style.height = tempHeight+'px';
+
+
     }), i
   },
   instantiateAsync: function(e, t, r) {
@@ -2552,6 +2554,7 @@ var UnityLoader = UnityLoader || {
     }
   }()
 };
+
 
 
 
