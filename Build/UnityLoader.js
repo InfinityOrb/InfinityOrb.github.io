@@ -2618,6 +2618,7 @@ function androidInitials(){
 
 function saveScore(score){
 score = parseInt(score);
+console.log("Inside SaveScore JS", score);
 if(GetMobileOperatingSystem() =="Android"){
   androidInitials();
 }
