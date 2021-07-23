@@ -2064,7 +2064,7 @@ var UnityLoader = UnityLoader || {
     //   text: "OK",
     //   callback: r
     // }])
-    t();
+    t()
   },
   buildCompatibilityCheck: function(e, t, r) {
     function n() {
