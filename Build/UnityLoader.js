@@ -2638,7 +2638,7 @@ $.ajax({
              }),
              success:function(response) {
               console.log(response);
-              console.log("Inside success savescore ", respone.message);
+              console.log("Inside success savescore ", response.message);
 
             },
             error:function(){
