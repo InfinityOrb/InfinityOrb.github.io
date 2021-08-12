@@ -2618,11 +2618,12 @@ function androidInitials(){
 }
 
 function saveScore(score){
-score = parseInt(score);
-console.log("Inside SaveScore JS Score ", score);
-if(GetMobileOperatingSystem() =="Android"){
-  androidInitials();
-}
+  console.log("Inside SaveScore JS Score ", score);
+  score = parseInt(score);
+  console.log("Inside SaveScore JS Score ", score);
+  if(GetMobileOperatingSystem() =="Android"){
+    androidInitials();
+  }
 console.log("Inside SaveScore JS Score ", score);
 $.ajax({
 
