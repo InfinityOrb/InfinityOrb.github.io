@@ -2328,12 +2328,22 @@ var UnityLoader = UnityLoader || {
         for (var s in r[a]) i.Module[s] = r[a][s];
       else i[a] = r[a];
     return n(e, i) || document.addEventListener("DOMContentLoaded", function() {
-
       let unityContent = document.getElementById('unityContainer');
-      var tempWidth = window.innerWidth ;
-      var tempHeight = window.innerHeight;
-      unityContent.style.width = tempWidth+'px';
-      unityContent.style.height = tempHeight+'px';
+            var tempWidth = window.innerWidth ;
+            var tempHeight = window.innerHeight;
+            unityContent.style.width = tempWidth+'px';
+            unityContent.style.height = tempHeight+'px';
+            const iPad = !!(navigator.userAgent.match(/(iPad)/) || (navigator.platform === "MacIntel" && typeof navigator.standalone !== "undefined"))
+            console.log("Before ios logs ",iPad, GetMobileOperatingSystem());
+            if(iPad ==true){
+               console.log("Calling initGame for Ipad");
+               window.webkit.messageHandlers.initGame.postMessage("initGame");
+            }
+            if(GetMobileOperatingSystem()=="iOS"){
+              console.log("Calling initGame for ios");
+              window.webkit.messageHandlers.initGame.postMessage("initGame");
+            }
+
       n(e, i)
     }), i
   },
